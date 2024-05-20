@@ -1,0 +1,129 @@
+### Cloud Server
+
+Given the franchise plans to move their public website to a cloud server to enhance operational performance and leverage the advantages of cloud infrastructure, we will estimate and compare the costs from two cloud service providers: Azure and AWS. Let’s look at the details:
+
+#### Microsoft Azure:
+- **Region:** Australia East
+- **Operating System:** Linux (Ubuntu 20.04 LTS)
+- **Instance Type:** B2s (2 vCPUs, 4 GB RAM)
+- **Storage:** 128 GB Standard SSD
+- **Bandwidth:** 2 TB outbound data transfer per month
+- **Product Link:** [Azure Pricing Details](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/)
+
+#### Amazon Web Services (AWS):
+- **Region:** Asia Pacific (Sydney)
+- **Operating System:** Linux (Ubuntu 20.04 LTS)
+- **Instance Type:** t3.medium (2 vCPUs, 4 GB RAM)
+- **Storage:** 128 GB General Purpose SSD (gp2)
+- **Bandwidth:** 2 TB outbound data transfer per month
+- **Product Link:** [AWS EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/t3/)
+
+### Cost Estimates
+
+#### Microsoft Azure:
+- **Virtual Machine:** B2s (2 vCPUs, 4 GB RAM) - $24/month
+- **Storage:** 128 GB Standard SSD - $10/month
+- **Bandwidth:** 2 TB - $80/month
+- **Total Monthly Cost:** $114
+- **Annual Cost:** $1,368
+
+#### Amazon Web Services (AWS):
+- **Virtual Machine:** t3.medium (2 vCPUs, 4 GB RAM) - $26/month
+- **Storage:** 128 GB General Purpose SSD (gp2) - $10/month
+- **Bandwidth:** 2 TB - $80/month
+- **Total Monthly Cost:** $116
+- **Annual Cost:** $1,392
+
+### Recommendation
+
+Microsoft Azure offers a slightly lower total cost compared to AWS. For the franchisor, it would be a cost-effective option. In the Australia East region, Azure has a robust infrastructure to support reliable performance.
+
+- **Region:** Selected regions of Australia to ensure data sovereignty and low latency.
+- **Operating System:** Ubuntu 20.04 LTS for stability and support for web server applications.
+- **Instance Type:** B2s for Azure, t3.medium for AWS, providing a balance between cost and performance.
+- **Storage:** 128 GB SSD
+- **Bandwidth:** 2 TB
+
+| Cost Summary         | Azure                              | AWS                                |
+|----------------------|------------------------------------|------------------------------------|
+| Specification      | Azure                    | AWS                           |
+| ------------------ | ------------------------ | ----------------------------- |
+| Region             | Australia East           | Asia Pacific (Sydney)         |
+| Operating System   | Linux (Ubuntu 20.04 LTS) | Linux (Ubuntu 20.04 LTS)      |
+| Instance Type      | B2s (2 vCPUs, 4 GB RAM)  | t3.medium (2 vCPUs, 4 GB RAM) |
+| Storage            | 128 GB Standard SSD      | 128 GB General Purpose SSD    |
+| Bandwidth          | 2 TB                     | 2 TB                          |
+| Total Monthly Cost | $114                     | $116                          |
+| Annual Cost        | $1,368                   | $1,392                        |                         |
+### Backup Solutions
+
+#### Current Backup Arrangements:
+- **Local RAID NAS Backup:** While local RAID NAS provides redundancy and a level of data protection, it is not reliable for disaster recovery scenarios. Offsite backups are required for better protection.
+
+#### Cloud Backup Services:
+
+**Azure Backup:**
+- **Capacity:** 1 TB
+- **Cost:** $20/month for storage, $5/month per protected instance
+- **Total Monthly Cost:** $25 per TB + instance costs
+- **Annual Cost:** $300 + instance costs
+- **Product Link:** [Azure Backup Pricing](https://azure.microsoft.com/en-us/pricing/details/backup/)
+
+**AWS Backup:**
+- **Capacity:** 1 TB
+- **Cost:** $25/month for storage, $5/month per protected instance
+- **Total Monthly Cost:** $30 per TB + instance costs
+- **Annual Cost:** $360 + instance costs
+- **Product Link:** [AWS Backup Pricing](https://aws.amazon.com/backup/pricing/)
+
+#### Non-Cloud Backup Services:
+
+**External Hard Drives:**
+- **Capacity:** 1 TB
+- **Cost:** $60 per drive (one-time)
+- **Usage:** Regular manual backups and offsite storage
+- **Annual Cost:** Minimal (based on replacement needs)
+- **Products:**
+  - [Toshiba 1TB Canvio Advance Portable External Hard Drive](https://storage.toshiba.com/consumer-hdd/external/canvio-advance)
+  - [WD Elements 1TB USB 3.0 Desktop External Hard Drive](https://www.amazon.com/Elements-Portable-External-Drive-WDBUZG0010BBK-WESN/dp/B00CRZ2PRM)
+
+**Tape Backup:**
+- **Capacity:** 1 TB
+- **Cost:** $100 per tape + $1,000 for tape drive (one-time)
+- **Usage:** Suitable for long-term archival storage
+- **Annual Cost:** Variable (based on tape usage and replacements)
+- **Products:**
+  - [IBM TS2280 Tape Drive](https://www.ibm.com/products/ts2280)
+
+### Backup Solutions Comparison
+
+| Backup Method        | Capacity | Cost (Monthly) | Cost (Annual)   | Advantages                              | Disadvantages                                    |
+| -------------------- | -------- | -------------- | --------------- | --------------------------------------- | ------------------------------------------------ |
+| Azure Backup         | 1 TB     | $25 + instance | $300 + instance | Offsite, automated, scalable            | Recurring cost, reliant on internet connectivity |
+| AWS Backup           | 1 TB     | $30 + instance | $360 + instance | Offsite, automated, scalable            | Recurring cost, reliant on internet connectivity |
+| External Hard Drives | 1 TB     | One-time $60   | Minimal         | Portable, no recurring cost             | Manual process, risk of physical damage          |
+| Tape Backup          | 1 TB     | One-time $100  | Variable        | Durable, suitable for long-term storage | Higher initial cost, manual process              |
+### Recommended Cloud Backup Provider
+
+Azure Backup provides a very cost-effective and scalable solution. It offers offsite backups that enhance data protection and disaster recovery capabilities.
+
+### Recommended Tools:
+
+**Google Drive:**
+- **Free Storage:** 15 GB
+- **Paid Plans:** $2/month for 100 GB
+- **Features:** Automatic syncing, easy sharing, integration with Google Workspace
+
+**Microsoft OneDrive:**
+- **Free Storage:** 5 GB
+- **Paid Plans:** $2/month for 100 GB
+- **Features:** Integration with Microsoft Office, automatic syncing
+
+**External Hard Drive:**
+- **Capacity:** 1 TB
+- **Cost:** $60 (one-time)
+- **Usage:** Regular manual backups, portable
+
+### Conclusion
+
+The proposed cloud server migration to Microsoft Azure is recommended both for its robust infrastructure and cost-effectiveness. For backups, a combination of Azure Backups and external hard drives is recommended for better service and data protection. The recommended tools for CQU ICT students offer convenience, cost-effectiveness, and good security to meet academic requirements.
